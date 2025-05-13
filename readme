@@ -1,0 +1,14 @@
+>> Run this command to install npm for use in this 
+
+npm install bcryptjs cloudinary cookie-parser cors dotenv express jsonwebtoken mongoose multer stripe
+
+1. bcryptjs => for incrypt the paassword
+2. cloudinary => for add the images in the cloudinary in the cloud storage
+3. cookie-parser => for cookie sent authentication to server for user authentication
+4. cors => for connect our backend with frontend
+5. dotenv => for store the environment variable in our backend
+6. express => for using backend with express
+7. jsonwebtoken => for authenticate the users
+8. mongoose => for connect with mongoDb database
+9. multer => for upload the images 
+10. stripe => for online payment gateway
