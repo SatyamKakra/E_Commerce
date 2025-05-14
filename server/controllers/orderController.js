@@ -167,15 +167,15 @@ export const stripeWebhooks = async (request, response)=>{
 export const getUserOrders = async (req, res)=>{
     try {
         const { userId } = req.query;
-        console.log("Fetching orders for userId:", userId);
+        // console.log("Fetching orders for userId:", userId);
         const orders = await Order.find({
             userId,
             $or: [{paymentType: "COD"}, {isPaid: true}]
         }).populate("items.product address").sort({createdAt: -1});
-        console.log("order", orders);
+        // console.log("order", orders);
         res.json({success: true, orders});
     } catch (error) {
-        console.log("error", error.message);
+        console.log(error.message);
         res.json({success: false, message: error.message});
     }
 }

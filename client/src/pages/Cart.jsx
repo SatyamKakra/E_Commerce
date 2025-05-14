@@ -19,7 +19,7 @@ const Cart = () => {
             product.quantity = cartItems[key]
             tempArray.push(product)
         }
-        console.log("cart item" , cartItems);
+        // console.log("cart item" , cartItems);
         setCartArray(tempArray)
     }
 
